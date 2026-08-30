@@ -202,7 +202,7 @@ You should see:
 
 ```
 /storehouse/visitor
-``
+```
 
 This is the full name of your home directory. This tells me that I are in a directory called visitor. This directory sits inside a directory called storehouse which sits inside the very top directory in the hierarchy. The very top of the hierarchy is a directory called / which is usually referred to as the root directory. So, to summarize: visitor is a directory in storehouse which is a directory in /.
 
@@ -215,18 +215,18 @@ $ cd /your_name
 What happened?
 
 Now type this:
-
+```
 $ cd your_name
-
+```
 The first uses the absolute path, giving the full address from the home directory. The second uses a relative path, giving only the address from the working directory. A full path always starts with a /. A relative path does not.
 
 A relative path is like getting directions from someone on the street. They tell you to “go right at the stop sign, and then turn left on Main Street”. That works great if you’re standing there together, but not so well if you’re trying to tell someone how to get there from another country. A full path is like GPS coordinates. It tells you exactly where something is no matter where you are right now. 
 Now navigate inside of your individual directory and run the command ‘ls’.
 
-
+```
 $ cd dr_signor
 $ ls
-
+```
 The command should return nothing, because we haven't created any files yet!
 
 ## Shortcut: tab completion
