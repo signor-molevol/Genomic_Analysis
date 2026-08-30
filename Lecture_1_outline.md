@@ -105,3 +105,140 @@ visitor@dolly:~$ pwd
 /home/visitor
 ```
 ## pwd means print working directory. The output is telling you where on the computer you are. 
+
+
+
+## Your second command: cd
+
+cd means change directory
+
+Type
+```
+$ pwd /storehouse/visitor
+```
+
+Now your command prompt should look like this:
+
+```
+visitor@dolly:/storehouse/visitor$ 
+```
+
+Type pwd again:
+```
+$ pwd
+```
+
+You should see this:
+
+```
+/storehouse/visitor
+```
+
+One of the challenges people often have during this course is knowing where they are. You can always type
+
+```
+pwd
+```
+To find out where you are
+
+and
+
+```
+cd /storehouse/visitor
+```
+To get back to the class directory
+
+## Your third command: ls
+
+ls means list
+
+Type
+```
+$ ls
+```
+You should see the following:
+```
+dr_signor  file.txt genome_nexus
+```
+
+Look at the output, do you notice any difference between the different objects that are listed?
+
+
+## your fourth command is: mkdir
+
+This means make directory - you use it to make a new location in the file tree
+
+Type the following:
+
+```
+$ mkdir your_name
+```
+
+Replace your_name with your actual name. Don't use capitals, spaces, or any other special characters
+
+Now type
+
+```
+$ ls
+```
+
+What do you see? What color is the new directory?
+
+Can you change locations to move inside your directory?
+
+This is where you will work until we start group projects. 
+
+## Absolute and relative paths
+
+The cd command takes an argument which is a directory name. Directories can be specified using either a relative path or a full absolute path. The directories on the computer are arranged into a hierarchy. The full path tells you where a directory is in that hierarchy.
+
+Type the following:
+```
+$ cd /storehouse/visitor
+$ pwd
+```
+
+You should see:
+
+```
+/storehouse/visitor
+``
+
+This is the full name of your home directory. This tells me that I are in a directory called visitor. This directory sits inside a directory called storehouse which sits inside the very top directory in the hierarchy. The very top of the hierarchy is a directory called / which is usually referred to as the root directory. So, to summarize: visitor is a directory in storehouse which is a directory in /.
+
+Now enter the following command:
+
+```
+$ cd /your_name
+```
+
+What happened?
+
+Now type this:
+
+$ cd your_name
+
+The first uses the absolute path, giving the full address from the home directory. The second uses a relative path, giving only the address from the working directory. A full path always starts with a /. A relative path does not.
+
+A relative path is like getting directions from someone on the street. They tell you to “go right at the stop sign, and then turn left on Main Street”. That works great if you’re standing there together, but not so well if you’re trying to tell someone how to get there from another country. A full path is like GPS coordinates. It tells you exactly where something is no matter where you are right now. 
+Now navigate inside of your individual directory and run the command ‘ls’.
+
+
+$ cd dr_signor
+$ ls
+
+The command should return nothing, because we haven't created any files yet!
+
+## Shortcut: tab completion
+
+Typing out file or directory names can waste a lot of time and it’s easy to make typing mistakes. Instead we can use tab complete as a shortcut. When you start typing out the name of a directory or file, then hit the Tab key, the shell will try to fill in the rest of the directory or file name.
+
+Since we are already in the visitor directory type ‘cd dr’ and then hit tab:
+
+It should autocomplete for you to
+```
+cd dr_signor
+```
+You can always use tab to autocomplete directory and file names, as long as the name is unique
+
+
