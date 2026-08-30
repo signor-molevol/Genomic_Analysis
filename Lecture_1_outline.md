@@ -246,7 +246,7 @@ You can always use tab to autocomplete directory and file names, as long as the 
 type the following into the command line:
 
 ```
-cd /bashcrawl/entrance/
+cd /home/visitor/bashcrawl/entrance
 ```
 
 once you are there, type:
