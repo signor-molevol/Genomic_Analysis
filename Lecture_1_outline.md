@@ -241,4 +241,18 @@ cd dr_signor
 ```
 You can always use tab to autocomplete directory and file names, as long as the name is unique
 
+# Now you are going to practice your commands
 
+type the following into the command line:
+
+```
+cd /bashcrawl/entrance/
+```
+
+once you are there, type:
+
+```
+cat scroll
+```
+
+Play the game for a little while with your table mates
