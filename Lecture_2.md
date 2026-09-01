@@ -163,10 +163,23 @@ less SRR3585777.fastq
 ```
 
 |key|	action|
--------------------
+|-------|-------------|
 |Space |	to go forward |
 |b	| to go backward |
 |g	| to go to the beginning |
 |G	| to go to the end |
 |q | to quit |
 
+less also gives you a way of searching through files. Use the “/” key to begin a search. Enter the word you would like to search for and press enter. The screen will jump to the next location where that word is found.
+
+Shortcut: If you hit “/” then “enter”, less will repeat the previous search. less searches from the current location and works its way forward. Scroll up a couple lines on your terminal to verify you are at the beginning of the file. Note, if you are at the end of the file and search for the sequence “CAA”, less will not find it. You either need to go to the beginning of the file (by typing g) and search again using / or you can use ? to search backwards in the same way you used / previously.
+
+# Navigate back up to /storehouse/visitor
+
+You should see a folder called genome_nexus.
+
+Move into that folder
+
+List the contents
+
+This is 300 libraries from something called the Drosophila Genome Nexus. This is the primary dataset we are going to work on in this class. Try googling the Drosophila Genome Nexus and write a little summary of what this data is and where it came from. You can give that to me before you leave, either over email or written.
