@@ -107,3 +107,70 @@ What do you see?
 
 This is a website you will likely spend some time on.
 
+# Back to a little more code
+
+## Wildcards
+
+You can use commands like this:
+
+```
+ls *.fastq
+```
+to list every file that ends in fastq, and no other files. The * is a wildcard that will match anything before the '.'.
+
+This command:
+```
+ls /usr/bin/*.sh
+```
+
+Lists everything in /usr/bin that ends in .sh.
+
+```
+/usr/bin/env_parallel.sh  /usr/bin/gettext.sh  /usr/bin/gvmap.sh  /usr/bin/nvidia-bug-report.sh  /usr/bin/nvidia-sleep.sh  /usr/bin/rescan-scsi-bus.sh
+```
+
+# Class Exercise 1
+Do each of the following tasks from your current directory using a single ls command for each:
+
+List all of the files in /usr/bin that start with the letter ‘c’.
+List all of the files in /usr/bin that contain the letter ‘a’.
+List all of the files in /usr/bin that end with the letter ‘o’.
+Bonus: List all of the files in /usr/bin that contain the letter ‘a’ or the letter ‘c’.
+
+Hint: The bonus question requires a Unix wildcard that we haven’t talked about yet. Try searching the internet for information about Unix wildcards to find what you need to solve the bonus problem.
+
+## Getting out of a pickle
+
+A very common occurrence is to type in a command, press enter, and have it hang without knowing why. You can escape this situation the following way: 
+
+Ctrl+C will cancel the command you are writing, and give you a fresh prompt.
+
+# Class Exercise 2
+1. What is the last line of the SRR3585777.fastq? (you can google this)
+2. What is the fourth line of SRR3585777.fastq?
+   BONUS: How many reads are in this file (you can google how to do this)
+
+# One last command
+
+```
+less
+```
+
+less is a great solution for viewing very large files, however know that you cannot edit files in less. try typing in the following command in your directory:
+
+```
+less SRR3585777.fastq
+```
+
+|key|	action|
+-------------------
+Space	to go forward
+-------------------
+b	to go backward
+-------------------
+g	to go to the beginning
+-------------------
+G	to go to the end
+-------------------
+q	to quit
+-------------------
