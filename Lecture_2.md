@@ -164,13 +164,9 @@ less SRR3585777.fastq
 
 |key|	action|
 -------------------
-Space	to go forward
--------------------
-b	to go backward
--------------------
-g	to go to the beginning
--------------------
-G	to go to the end
--------------------
-q	to quit
--------------------
+|Space |	to go forward |
+|b	| to go backward |
+|g	| to go to the beginning |
+|G	| to go to the end |
+|q | to quit |
+
