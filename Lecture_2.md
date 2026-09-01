@@ -1,3 +1,22 @@
+# Log into the server
+
+To sign into the server, type this:
+
+```
+ssh visitor@134.129.113.32
+```
+You will see this prompt for a password. Type in:
+
+```
+temp
+```
+
+## Navigate to /storehouse/visitor
+
+What command should you use to list the available files in this directory?
+
+Use this command to enter the directory called working_with_files/
+
 # A reminder on the FASTQ format
 
 | Line	| Description |
