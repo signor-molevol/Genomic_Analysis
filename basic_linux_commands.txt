@@ -1,0 +1,55 @@
+Basic Linux commands
+Command	Description	
+
+cat > filename	Creates a new file
+
+cat filename	Displays the file content
+
+cat file1 file2 > file3	Joins two files (file1, file2) and stores the output in a new file (file3)
+
+cd or cd ~	Navigate to HOME directory
+
+cd ..	Move one level up
+
+cd	To change to a particular directory
+
+cd /	Move to the root directory
+
+
+cp file.txt file2.txt copies file and leaves the original intact
+
+head - print the first 10 lines of a file onto the screen
+
+history	Gives a list of all past commands typed in the current terminal session
+
+ls	Lists all files and directories in the present working directory
+
+ls -R	Lists files in sub-directories as well
+
+ls -a	Lists hidden files as well
+
+ls -al	Lists files and directories with detailed information like permissions,size, owner, etc.
+
+man	Gives help information on a command
+
+mkdir directoryname	Creates a new directory in the present working directory or a at the specified path
+
+mv file "new file path"	Moves the files to the new location
+
+mv filename new_file_name	Renames the file to a new filename
+
+pwd prints working directory
+
+rm filename	Deletes a file
+
+rmdir	Deletes a directory
+
+tab - autocompletes file names
+
+touch file.txt creates an empty file
+
+the up key - scrolls through your command history
+
+
+
+
