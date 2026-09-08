@@ -174,7 +174,7 @@ unidentified
 
 Drosophila algonquin
 
-<img width="437" height="262" alt="image" src="https://github.com/user-attachments/assets/6cea8ed2-feaf-41c2-b4d9-0ee7784d16d8" />
+<img width="422" height="416" alt="image" src="https://github.com/user-attachments/assets/21fe3d88-cf0a-4847-a623-d1507951112a" />
 
 Drosophila putrida
 
