@@ -156,4 +156,32 @@ grep -B1 'ACTGATCAGAGCTGGAGTTCCGCAAGGCAGTGTGCTCGGACCAATACTGTACACCCT' SRR3585777.
 
 Now open G6.fasta and check what is in there. 
 
+# What kind of flies did we catch?
+
+<img width="289" height="372" alt="image" src="https://github.com/user-attachments/assets/f7df8527-39cc-4b50-9882-b70ae0f2fe82" />
+
+Drosophila recens
+
+<img width="413" height="493" alt="image" src="https://github.com/user-attachments/assets/2b6b5ac8-d52b-47ec-9ee1-e36420ea7711" />
+
+Scaptomyza pallida
+
+<img width="711" height="574" alt="image" src="https://github.com/user-attachments/assets/245dfe3d-0804-42e4-a599-b65734e86422" />
+
+unidentified
+
+<img width="437" height="262" alt="image" src="https://github.com/user-attachments/assets/04375b15-dc56-412a-8648-4bdc3a82079f" />
+
+Drosophila algonquin
+
+<img width="437" height="262" alt="image" src="https://github.com/user-attachments/assets/6cea8ed2-feaf-41c2-b4d9-0ee7784d16d8" />
+
+Drosophila putrida
+
+<img width="565" height="315" alt="image" src="https://github.com/user-attachments/assets/d73b2709-c776-4152-b655-15320da4df24" />
+
+Drosophila hydei
+
+
+
 
