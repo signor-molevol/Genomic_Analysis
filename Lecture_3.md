@@ -4,7 +4,25 @@
 
 
 
-# A brief refresher on files types
+Search in google scholar for the manuscript: A Thousand Fly Genomes: An Expanded Drosophila Genome Nexus
+
+<img width="665" height="253" alt="Screenshot 2026-09-08 at 2 43 52 PM" src="https://github.com/user-attachments/assets/d6ddfb8c-babf-408c-8af6-8dc2b8430eb4" />
+
+Click on the cited by link
+
+Look for an interesting manuscript that used either this data or this type of data, and look it over briefly. Summarize the manuscript (very briefly, does not need to go into detail) and tell the class about it. 
+
+An example: From sub-Saharan Africa to China: Evolutionary history and adaptation of Drosophila melanogaster revealed by population genomics
+
+1. The authors found six distinct 'ancestry lineages' of Drosophila melanogaster, with China a distinct group
+2. European and Chinese D. mel share a common ancestor around 9,000 years ago, then diverged around 2-4,000 years ago
+3. D. mel reached Australia and North America around 200 years ago
+4. Distribution of D. mel is tightly tied to human activity
+5. They found selection at insecticide resistance loci
+
+## Any question you ask will be smaller than these manuscripts, but you can start thinking about the type of question that these datasets can answer
+
+# A brief refresher on file types
 
 ## When you see a file like this: SRR236768.fastq
 
