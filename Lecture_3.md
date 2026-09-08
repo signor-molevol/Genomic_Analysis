@@ -1,3 +1,8 @@
+# The Drosophila Genome nexus
+
+<img width="592" height="307" alt="Screenshot 2026-09-08 at 2 27 12 PM" src="https://github.com/user-attachments/assets/7a543afc-2006-4cc2-9f7c-ac425045c823" />
+
+
 
 # A brief refresher on files types
 
@@ -156,6 +161,33 @@ grep -B1 'ACTGATCAGAGCTGGAGTTCCGCAAGGCAGTGTGCTCGGACCAATACTGTACACCCT' SRR3585777.
 
 Now open G6.fasta and check what is in there. 
 
+
+# Class activity
+
+Find a drosophila simulans gene and select a small portion of it. 
+
+Search for it in the fastq file. 
+
+Redirect the output to a file, and name the file after the gene. 
+
+Blast one of the sequences and make sure it is what you think it is. 
+
+Create a document with the following in it: 
+
+1. The sequence you are searching and the name of the gene you chose
+2. The code you used to get the sequence
+3. The number of lines in your output file
+4. A screenshot of your blast output
+
+   Email to me at: sarah.signor@ndsu.edu
+
+Where do we find Drosophila genes?
+
+Here are some options: ebony, yellow, Gpdh, Ddc, Adh
+
+<img width="1568" height="837" alt="Screenshot 2026-09-08 at 1 26 22 PM" src="https://github.com/user-attachments/assets/c503ad4b-2500-4570-a94a-00eda0f022d1" />
+
+
 # What kind of flies did we catch?
 
 <img width="289" height="372" alt="image" src="https://github.com/user-attachments/assets/f7df8527-39cc-4b50-9882-b70ae0f2fe82" />
@@ -181,6 +213,24 @@ Drosophila putrida
 <img width="565" height="315" alt="image" src="https://github.com/user-attachments/assets/d73b2709-c776-4152-b655-15320da4df24" />
 
 Drosophila hydei
+
+
+## What are we looking for? Mostly D. melanogaster and D. simulans
+<img width="1484" height="1077" alt="image" src="https://github.com/user-attachments/assets/43043884-12a2-401a-86c8-107c5f057a9e" />
+
+<img width="850" height="314" alt="image" src="https://github.com/user-attachments/assets/cf0988af-15c1-4cd7-9bcf-de985f770fe6" />
+
+
+But....males don't lay eggs, so how do we identify the females?
+
+
+
+<img width="4228" height="2816" alt="image" src="https://github.com/user-attachments/assets/ee4ba2d2-b56b-40da-bb33-325255d09218" />
+
+You can't! So right now I have single females laying eggs, and we will see what emerges.
+
+Then, I'm going to inbred them for a little bit. Can anyone guess why we inbred them before sequencing?
+
 
 
 
