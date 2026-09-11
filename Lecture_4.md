@@ -313,8 +313,6 @@ options:
       --discard_unmerged               DEPRECATED, no effect now, see the introduction for merging.
   -?, --help                           print this message
 
-Citation:
-Shifu Chen. 2023. Ultrafast one-pass FASTQ data preprocessing, quality control, and deduplication using fastp. iMeta 2: e107
 ```
 
 Most of these options you will never use, unless you are working with unique data. These days many things are done automatically.
@@ -323,7 +321,65 @@ What you really need to see are the input and output flags.
 ```
 -i (single end input)
 -o (single end output)
-
+```
 ## Try to write up a line of code to run on the fastq file in your directory.
 
 ## Did it work? What does your output look like?
+
+## Next type in bwa and press enter. You should see this:
+```
+Program: bwa (alignment via Burrows-Wheeler transformation)
+Version: 0.7.17-r1188
+Contact: Heng Li <lh3@sanger.ac.uk>
+
+Usage:   bwa <command> [options]
+
+Command: index         index sequences in the FASTA format
+         mem           BWA-MEM algorithm
+         fastmap       identify super-maximal exact matches
+         pemerge       merge overlapping paired ends (EXPERIMENTAL)
+         aln           gapped/ungapped alignment
+         samse         generate alignment (single ended)
+         sampe         generate alignment (paired ended)
+         bwasw         BWA-SW for long queries
+
+         shm           manage indices in shared memory
+         fa2pac        convert FASTA to PAC format
+         pac2bwt       generate BWT from PAC
+         pac2bwtgen    alternative algorithm for generating BWT
+         bwtupdate     update .bwt to the new format
+         bwt2sa        generate SA from BWT and Occ
+
+Note: To use BWA, you need to first index the genome with `bwa index'.
+      There are three alignment algorithms in BWA: `mem', `bwasw', and
+      `aln/samse/sampe'. If you are not sure which to use, try `bwa mem'
+      first. Please `man ./bwa.1' for the manual.
+```
+
+
+## Your genome reference is in the /storehouse/visitor folder
+```
+GCA_016746395.2_Prin_Dsim_3.1_genomic.fna
+```
+
+Copy it into your directory. Use head to look at it. You should see that it is in FASTA format.
+
+
+## The first step is indexing the reference
+
+```
+
+bwa index GCA_016746395.2_Prin_Dsim_3.1_genomic.fna
+
+```
+
+This should only take a second.
+
+
+## Then you map to the reference
+
+```
+bwa mem -t 10 /storehouse/visitor/yourfolder/GCA_016746395.2_Prin_Dsim_3.1_genomic.fna SRR3585777.trimmed.fastq > SRR3585777.sam
+```
+
+https://www.youtube.com/watch?v=Pk4TYf_Ut_E
