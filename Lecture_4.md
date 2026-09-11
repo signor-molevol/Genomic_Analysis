@@ -181,3 +181,35 @@ Here are some options: ebony, yellow, Gpdh, Ddc, Adh
 
 <img width="1568" height="837" alt="Screenshot 2026-09-08 at 1 26 22 PM" src="https://github.com/user-attachments/assets/c503ad4b-2500-4570-a94a-00eda0f022d1" />
 
+# How do we use our reads to find information about our species genome?
+
+## First, lets remind ourselves of some terminology
+
+Can anyone tell me what genetic variation is in the most general sense?
+
+
+<img width="1143" height="641" alt="Screenshot 2026-09-11 at 11 07 17 AM" src="https://github.com/user-attachments/assets/bb86447c-bd2d-4aaf-877b-eacc70bb5fd1" />
+
+
+## What about a genotype?
+
+## Why do we care?
+
+
+<img width="1153" height="640" alt="Screenshot 2026-09-11 at 11 08 14 AM" src="https://github.com/user-attachments/assets/764e9204-188e-4f49-857d-8c80e18d9470" />
+
+## How do we find variation?
+
+<img width="520" height="336" alt="Screenshot 2026-09-11 at 11 10 59 AM" src="https://github.com/user-attachments/assets/4285a0dc-b324-4200-9c47-d08ff02588dc" />
+
+## Some terminology about reads and read mapping:
+
+<img width="839" height="477" alt="Screenshot 2026-09-11 at 11 11 52 AM" src="https://github.com/user-attachments/assets/77e4bf4e-0bcc-4ac1-a76c-b2697afc2cb9" />
+
+
+## What is the general pipeline for mapping reads to a reference genome?
+
+
+<img width="1281" height="713" alt="Screenshot 2026-09-11 at 11 09 29 AM" src="https://github.com/user-attachments/assets/37b35434-74e9-4264-a61a-5221ad92cafd" />
+
+
