@@ -220,7 +220,7 @@ We do that with a program called fastp.
 Type in fastp and hit enter. Look at the output. 
 
 
-````
+```
 fastp: an ultra-fast all-in-one FASTQ preprocessor
 version 0.23.4
 usage: fastp [options] ... 
