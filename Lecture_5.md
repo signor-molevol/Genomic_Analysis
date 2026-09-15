@@ -75,13 +75,18 @@ Zambian flies are lowland flies, Ethiopian flies are highland flies.
 
 <img width="1348" height="229" alt="Screenshot 2026-09-15 at 4 10 04 PM" src="https://github.com/user-attachments/assets/79d6c397-be95-4f2b-9dc3-aba5c09d8aea" />
 
+## Once you find it on NCBI, click on the link to get the fasta file
+
 <img width="713" height="586" alt="Screenshot 2026-09-15 at 4 10 40 PM" src="https://github.com/user-attachments/assets/58d09cb3-aedf-4d20-aa46-dc126b9912ed" />
 
+
+## Now use the command below to make a new file for your gene. Copy the fasta from the website and paste it into your file.
 
 ```
 nano bbc.fasta
 ^X
 ```
+## Once it has been pasted into your file, exit by pressing control X
 
 ## Make a copy of these sequencing files (the 8 listed above) in your folder. 
 
