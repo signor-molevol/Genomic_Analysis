@@ -25,7 +25,7 @@
 
 ## Prediction: Controlling all other variables in the lab, flies raised at higher temperature will not be more pigmented
 
-<img width="936" height="298" alt="image" src="https://github.com/user-attachments/assets/d2297cb7-0bcf-414f-95a1-caf76e94fffd" />
+
 
 
 <img width="894" height="440" alt="Screenshot 2026-09-15 at 3 42 19 PM" src="https://github.com/user-attachments/assets/221c77bd-112a-4306-841d-76d2b0eed451" />
@@ -54,7 +54,7 @@ Ethiopian line 73N  SRR31835482
 ```
 
 ```
-Zambian line 366N
+Zambian line 366N  SRR10729165
 Zambian line 418N
 Zambian line 403N
 Zambian line 274N
@@ -66,7 +66,32 @@ Zambian flies are lowland flies, Ethiopian flies are highland flies.
 # What gene should we look at?
 
 
-<img width="89" height="17" alt="image" src="https://github.com/user-attachments/assets/21fbcef6-7d13-4194-95bd-cc47c056bed3" />
+<img width="769" height="339" alt="Screenshot 2026-09-15 at 4 08 35 PM" src="https://github.com/user-attachments/assets/f78ffd9e-cd05-46c3-b472-246fe4683432" />
+
+## In the paper, this was a gene with some of the most differentiation between Zambian and Ethiopian flies. 
+
+## Lets get the gene!
+
+
+<img width="1348" height="229" alt="Screenshot 2026-09-15 at 4 10 04 PM" src="https://github.com/user-attachments/assets/79d6c397-be95-4f2b-9dc3-aba5c09d8aea" />
+
+<img width="713" height="586" alt="Screenshot 2026-09-15 at 4 10 40 PM" src="https://github.com/user-attachments/assets/58d09cb3-aedf-4d20-aa46-dc126b9912ed" />
+
+
+```
+nano bbc.fasta
+^X
+```
+
+
+
+
+
+
+
+
+
+
 
 
 
