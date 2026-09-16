@@ -55,9 +55,9 @@ Ethiopian line 73N  SRR31835482
 
 ```
 Zambian line 366N  SRR10729165
-Zambian line 418N
-Zambian line 403N
-Zambian line 274N
+Zambian line 418N  SRR10733526
+Zambian line 403N  SRR10729566
+Zambian line 274N  SRR10729166
 ```
 
 Zambian flies are lowland flies, Ethiopian flies are highland flies.
@@ -88,8 +88,11 @@ nano bbc.fasta
 ```
 ## Once it has been pasted into your file, exit by pressing control X
 
-## Make a copy of these sequencing files (the 8 listed above) in your folder. 
+## Make a copy of these sequencing files (the 8 listed above) in your folder. They are located here:
 
+```
+/storehouse/visitor/pigmentation
+```
 
 ## Now we are going to go through the process of testing our hypothesis, and as we do that, we will learn about next generation sequencing and try to formulate our own hypothesis.
 
