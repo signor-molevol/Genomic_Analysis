@@ -1,5 +1,6 @@
 ## Review commands
-
+ls - list contents of your current location
+pwd - print your current location
 mkdir - make directory
 cd - change directory
 cp - copy
@@ -11,7 +12,10 @@ grep - search for pattern
 > - direct output to a file
 rm - remove
 tab - autocomplete
+.. - up one directory
+. - current directory
 
+## Last week we talked about flies that had evolve to have larger body size at higher altitudes
 
 
 ## Next type in bwa and press enter. You should see this:
