@@ -1,4 +1,5 @@
 ## Review commands
+```
 ls - list contents of your current location
 pwd - print your current location
 mkdir - make directory
@@ -14,7 +15,7 @@ rm - remove
 tab - autocomplete
 .. - up one directory
 . - current directory
-
+```
 ## Last week we talked about flies that had evolve to have larger body size at higher altitudes
 
 ## Some of the data included in this study is as follows:
