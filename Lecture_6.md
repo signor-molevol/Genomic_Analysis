@@ -49,12 +49,12 @@ Zambian flies are lowland flies, Ethiopian flies are highland flies.
 
 
 ## I took the liberty of rearranging your files to be ready for today. You will be working in groups, please actually work together. 
-
+```
 table_1
 table_2
 table_3
 table_4
-
+```
 You should each have a subfolder called pigmentation that contains your original files and your trimmed files. 
 
 like this:
