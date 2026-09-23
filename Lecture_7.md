@@ -41,6 +41,35 @@ Zambian line 274N  SRR10729166
 
 Zambian flies are lowland flies, Ethiopian flies are highland flies.
 
+## Once you have sam files for every pair of reads, you need to convert them to another format called bam
+
+The tool for this is called samtools.
+
+The manual page is here:
+
+https://www.htslib.org/doc/samtools.html
+
+So just a refresh of our pipeline so far
+
+
+```
+FASTP --------> BWA INDEX ---------> BWA MEM -----------> SAMTOOLS VIEW ----------------> SAMTOOLS SORT
+```
+
+You can also type in samtools and it will print the options.
+
+We use samtools to convert to a more compressed file type called bam, then we sort the reads by location. Can you adapt the code below to be a for loop?
+
+```
+samtools view -b file.sam -o file.bam
+```
+
+The -b flag tells the program to output as a bam file. 
+
+
+```
+samtools sort file.bam -o file.sorted.bam
+```
 
 
 ## Document your code
