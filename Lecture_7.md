@@ -4,10 +4,16 @@
 
 ## navigate to github.com
 
-Username: SignorLab
-passwd: genomicanalysis1&
+Username: signor-molevol
 
-Create a new file by pressing the plust sign. Call the file Table_*.md 
+
+passwd: (i'll tell you in class)
+
+Create a new file by pressing the plus sign. 
+
+
+Call the file Table_*.md 
+
 
 Replace the * with your table number
 
