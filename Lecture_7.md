@@ -1,3 +1,48 @@
+## Review commands
+```
+ls - list contents of your current location
+pwd - print your current location
+mkdir - make directory
+cd - change directory
+cp - copy
+mv - move
+nano file.txt - open and create a file
+head/tail - print first and last lines
+sed - text stream editor
+grep - search for pattern
+> - direct output to a file
+rm - remove
+tab - autocomplete
+.. - up one directory
+. - current directory
+
+
+for i in *
+do
+done
+
+```
+## Last week we talked about flies that had evolve to have larger body size at higher altitudes
+
+## Some of the data included in this study is as follows:
+```
+Ethiopian line 8N  SRR31835375
+Ethiopian line 15N  SRR31835573
+Ethiopian line 86N  SRR31835473
+Ethiopian line 73N  SRR31835482
+```
+
+```
+Zambian line 366N  SRR10729165
+Zambian line 418N  SRR10733526
+Zambian line 403N  SRR10729566
+Zambian line 274N  SRR10729166
+```
+
+Zambian flies are lowland flies, Ethiopian flies are highland flies.
+
+
+
 ## Document your code
 
 ## One of the easiest things to do is write it on github. 
