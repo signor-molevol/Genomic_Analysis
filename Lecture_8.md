@@ -23,7 +23,7 @@ One way is conda - it creates a container with the right dependencies for whatev
 So before we do variant calling, type this:
 
 ```
-Conda activate bio_env
+conda activate bio_env
 
 ```
 
@@ -35,19 +35,25 @@ bcftools
 
 And press enter. Take a second to look over the output. 
 
-We are going to use two commands to call alleles in our bam files;
+We are going to use two commands to call alleles in our bam files
 
-	mpileup and call
+```
+	mpileup
+	call
+```	
 	
-	
-	
-### What mpileup does is call variants in the file. It basically slices each base in the reference and looks
+### Calculate likelihoods	
+What mpileup does is call variants in the file. It basically slices each base in the reference and looks
 across all the aligment files you give it. Then it calls the likelihood of each bam file having
 each genotype (for example A/A, A/T, or T/T). This includes data like coverage at the base, quality
 of mapping at the base, etc. 
 
 
-### call actually calls the variants. It takes the genotype likelihoods and quality information from the last step
+<img width="1088" height="706" alt="image" src="https://github.com/user-attachments/assets/1bde13b2-575b-4ee0-9df3-8a722c30742b" />
+
+
+### Call variants
+call actually calls the variants. It takes the genotype likelihoods and quality information from the last step
 and uses to to calculate the total likelihood of a given genotype at a position
 
 ### At the end of this, you will have a file called a VCF file (so make sure you use that file ending)
@@ -55,7 +61,7 @@ and uses to to calculate the total likelihood of a given genotype at a position
 The command looks like this:
 
 ````
-bcftools mpileup -Ou -f bbc.fasta 'SRR10729165.sorted.bam SRR10729166.sorted.bam...' | bcftools call -mv -Ov -o body_size.vcf
+bcftools mpileup -Ou -f bbc.fasta SRR10729165.sorted.bam SRR10729166.sorted.bam... | bcftools call -mv -Ov -o body_size.vcf
 ```
 
 Can you guys look at the bcftools manual (by typing bcftools mpileup for example)
