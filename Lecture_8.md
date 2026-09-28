@@ -126,4 +126,66 @@ INFO: Additional semi-colon-separated key-value pairs containing extra annotatio
 
 
 Again all of these file types are very specific, so make sure to use the right file ending so that
-you keep everything organized. 
+you keep everything organized.
+
+
+# Looking for ideas for Drosophila projects. 
+
+1. Brainstorm something that interests you. Almost any topic has been looked at in Drosophila, and
+sometimes there are documented phenotypes. The populations on our server are from Egypt, Ethiopia,
+France, South Africa, and Zimbabwe. You are free to stick to these. You could do things like look at
+a set of genes that interest you (i.e. Odorant receptors), or something with copy number variation.
+
+For example, this paper is on copy number variation:
+
+https://academic.oup.com/mbe/article/33/5/1308/2579856
+
+You could look at phenotypes like pigmentation, wing size, etc. There may be information for some lines on
+alcohol tolerance (actually there is, I can help with that). I encourage you to poke around and come
+up with a few options.
+
+## What data did they use?
+
+Places to look: The data availability statement, supplemental files, or search the document for key words
+SRA, Bioproject, etc. 
+
+They data they used may not be appropriate for this work - for example I would discourage using pooled data. 
+
+You also don't want to do exactly what they did. Look at what other people have done and find a way to make
+it smaller - you aren't writing a research paper - and put your own spin on it. 
+
+Then you can ask, is there a way I can use different data to come at this question from a
+different angle?
+
+For example:
+
+https://pubmed.ncbi.nlm.nih.gov/27777283/
+
+
+
+In this paper cold adapted flies are from Ethiopia, and warm adapted flies are from France. We probably have at
+least a subset of these flies.
+
+Look at the supplemental information, they have phenotypes published for them.
+
+One idea would be to look at some genes from this paper you think are interesting, then
+compare to ND flies once we have the data. 
+
+No problem if you guys want to look at this, but everyone has to look from a different angle -
+two groups can't ask the same question.
+
+
+Start poking around - Start a file with the following information:
+
+1. Paper URL or name
+   
+2. Basic question
+   
+3. What data they used/what comparison
+   
+4. Is there phenotype information?
+   
+5. Possible direction your inquiry could take. 
+
+Try to come up with two options before the end of class and send them to me. 
+
