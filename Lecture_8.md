@@ -1,3 +1,27 @@
+## Review commands
+```
+ls - list contents of your current location
+pwd - print your current location
+mkdir - make directory
+cd - change directory
+cp - copy
+mv - move
+nano file.txt - open and create a file
+head/tail - print first and last lines
+sed - text stream editor
+grep - search for pattern
+> - direct output to a file
+rm - remove
+tab - autocomplete
+.. - up one directory
+. - current directory
+
+
+for i in *
+do
+done
+
+
 ## New command of the day is:
 
 ```
