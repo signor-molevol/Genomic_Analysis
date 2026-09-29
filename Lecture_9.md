@@ -50,16 +50,16 @@ Make two plain text files, one sample name per line, matching exactly what
 # group1.txt
 SRR10729165.sorted.bam
 SRR10729166.sorted.bam
-SRR10729167.sorted.bam
-SRR10729168.sorted.bam
+SRR10729566.sorted.bam
+SRR10733526.sorted.bam
 ```
 
 ```bash
 # group2.txt
-SRR10729169.sorted.bam
-SRR10729170.sorted.bam
-SRR10729171.sorted.bam
-SRR10729172.sorted.bam
+SRR31835375.sorted.bam
+SRR31835473.sorted.bam
+SRR31835482.sorted.bam
+SRR31835573.sorted.bam
 ```
 
 ## Step 4: Split the VCF by group
@@ -68,6 +68,9 @@ SRR10729172.sorted.bam
 bcftools view -S group1.txt body_size.vcf.gz -Oz -o group1.vcf.gz
 bcftools view -S group2.txt body_size.vcf.gz -Oz -o group2.vcf.gz
 ```
+# filter each group's VCF to strictly biallelic SNPs first
+bcftools view -m2 -M2 -v snps group1.vcf.gz -Oz -o group1_biallelic.vcf.gz
+bcftools view -m2 -M2 -v snps group2.vcf.gz -Oz -o group2_biallelic.vcf.gz
 
 ## Step 5: Calculate allele frequency within each group
 
@@ -76,8 +79,8 @@ bcftools view -S group2.txt body_size.vcf.gz -Oz -o group2.vcf.gz
 first. Run it separately on each group:
 
 ```bash
-bcftools +fill-tags group1.vcf.gz -Oz -o group1_af.vcf.gz -- -t AF
-bcftools +fill-tags group2.vcf.gz -Oz -o group2_af.vcf.gz -- -t AF
+bcftools +fill-tags group1_biallelic.vcf.gz -Oz -o group1_af.vcf.gz -- -t AF
+bcftools +fill-tags group2_biallelic.vcf.gz -Oz -o group2_af.vcf.gz -- -t AF
 ```
 
 ## Step 6: Pull out just CHROM, POS, and AF
@@ -107,12 +110,16 @@ merged <- merge(g1, g2, by = c("CHROM", "POS"))
 merged <- na.omit(merged)
 merged$AF_diff <- merged$AF1 - merged$AF2
 
+# make a plot of allele frequency differences
+pdf('merged.pdf')
+
 plot(merged$POS, merged$AF_diff,
      pch = 19, col = "steelblue",
      xlab = "Position in gene", ylab = "Allele frequency difference (Group1 - Group2)",
      main = "Allele frequency difference along bbc")
 abline(h = 0, lty = 2, col = "grey40")
 
+dev.off()
 
 
 
