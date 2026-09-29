@@ -122,7 +122,21 @@ abline(h = 0, lty = 2, col = "grey40")
 dev.off()
 
 
+```
 
+How do you look at your pdf?
+
+Navigate to someone on YOUR computer where you will be able to find a file using cd
+
+type:
+
+scp -r visitor@134.129.113.23:/storehouse/visitor/table_/pigmentation/merged.pdf .
+
+It will ask for your password
+
+Once it is downloaded, type open .
+
+Then open your pdf
 
 
 
