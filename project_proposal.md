@@ -2,11 +2,14 @@
 After coming up with a research idea, including a scientific question and a hypothesis, the next step that most researchers need to take is writing a proposal that they will send to a funding agency (such as the National Science Foundation) in an attempt to get funds to pay for the research.  Even researchers that work in industry need to write proposals so that their company’s managers and financial officers can determine how best to allocate the company’s resources.  
 ## Part 1 – Annotated Bibliography
 Before you are able to write an effective proposal, you will need to do your background research.  In your proposal, you will need to describe the problem that your research is designed to address, why this research topic is important and what is already known about your research topic.  To address these topics you will need to describe information and results found in previously published papers.  
+
 A good way to prepare for writing your proposal is to prepare an Annotated Bibliography.  This document is a list of previously published papers that contain information that can be used to help construct your hypothesis, and each paper citation is followed by 1-2 descriptive sentences.  For your annotated bibliography, you should find at least 5 research papers with background information, data, methods and/or results that are related to your project idea.  
+
 For each paper, include the citation for the paper in the style shown below AND a 1-2 setences that summarizes the objective of the paper and a description of how this paper relates to your research project.  
+
 Paper Citation Format:  References will have this general format - Author name.  Year of publication.  Title of article.  Name of Journal  Volume number: page numbers.  Below are some examples of what these references should look like depending on if the paper has 1, 2 or more than 2 authors.
 
-
+Papers you can include - papers you got data from, papers you got candidate genes from, papers on a similar topic
 
 ## Part 2 - Proposal
 
@@ -16,13 +19,19 @@ Your proposal will include the sections listed below.
 
 ## 1.	 Introduction – This section should be 1-2  paragraphs, in which you should try to convince the reviewer of the need for your research project.   Think about framing your introduction by writing it in four parts:
 	
-  Statement of the problem:  What is the problem or question that your research is designed to address and why is the problem that you are addressing important? 
-	Need for your work:  How could new research help to alleviate this problem (one research project rarely ever solves a large problem, but you should explain how a project like yours could contribute to solving the problem)?  For example - how resilient are organisms to climate change?
-	Previous work:  Summarize what others have done to attempt to address this problem.
-	Proposed goal of new research:  Describe the aim or goal of your research and how it could contribute to problem
+### Statement of the problem  
+What is the problem or question that your research is designed to address and why is the problem that you are addressing important? 
 
- 
- In writing the Introduction, you should be making factual claims and you must support those claims by providing references to papers where you found the information.  
+### Need for your work  
+How could new research help to alleviate this problem (one research project rarely ever solves a large problem, but you should explain how a project like yours could contribute to solving the problem)?  For example - how resilient are organisms to climate change?
+
+### Previous work  
+Summarize what others have done to attempt to address this problem.
+
+### Proposed goal of new research  
+Describe the aim or goal of your research and how it could contribute to problem
+
+In writing the Introduction, you should be making factual claims and you must support those claims by providing references to papers where you found the information.  
 
 ### Statement of problem:
 Transposable elements have profound consequences for genome evolution, but we know very little about how frequently they transfer between species. The advent of long read sequences has opened the door for understanding the horizontal transfer of transposons and their potential effect on genome evolution. 
@@ -44,7 +53,9 @@ In this section you should state your objective(s) if you are conducting an indu
 A hypothesis is an explanation for a phenomenon, or in other words, given what you already know about the topic, it is your proposed answer to your scientific question.
 An objective is a goal to be achieved by conducting the research.
 
-## 4. Background:  This section should include a one paragraph summary of what is currently known about the type of research that you are conducting. For this section, you should be able to get information from some of the papers that you included in your annotated bibliography.  After you describe information from a particular journal article you should include an in-text reference to the source of the information.  Directions for how to include in-text references are given below.
+## 4. Background  
+
+This section should include a one paragraph summary of what is currently known about the type of research that you are conducting. For this section, you should be able to get information from some of the papers that you included in your annotated bibliography.  After you describe information from a particular journal article you should include an in-text reference to the source of the information.  Directions for how to include in-text references are given below.
 
 Here is an example of an objective and background section:
 
@@ -55,7 +66,12 @@ Prior to recent work in Drosophila, the estimated rate of horizontal transfer fo
 A few recent studies have shown evidence of horizontal transfer between insect groups - for example ants and dipterans (Peccoud et al. 2017). However, very little is still known about the rate of horizontal transfer of transposons.  As we move organisms around the world at unprecedented rates, it is quite possible that the rate of horizontal transfer is increasing. This could cause increased challenges with genomic stability in species exposed to new congeners. How this will effect genome evolution is unknown.
 In-text references should have the format shown in the paragraph above.  In-text references can be included at the beginning or end of a sentence.    
 
-## Methods – This section should be a diagram (box and arrow model) showing the main scientific methods that you will be using to address your hypothesis.  In your diagram, it should be clear how many datasets you will have and what they are.  Your diagram should be followed by a short text description of each method portrayed in the boxes.  In this text description, you should provide details for how the procedure is to be completed.
+## Methods – 
+
+This section should be a diagram (box and arrow model) showing the main scientific methods that you will be using to address your hypothesis.  In your diagram, it should be clear how many datasets you will have and what they are.  Your diagram should be followed by a short text description of each method portrayed in the boxes.  In this text description, you should provide details for how the procedure is to be completed.
+
+<img width="2997" height="2949" alt="image" src="https://github.com/user-attachments/assets/92a40e50-d5a0-48fc-94eb-8d575d57f399" />
+
 
 ## References
 The reference section at the end of the paper you should include a reference section that lists all of the papers cited in the proposal.  The reference section should use the same format that you used for your annotated bibliography, but you only include the reference.  DO NOT include a descriptive paragraph.
