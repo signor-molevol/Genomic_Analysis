@@ -56,7 +56,35 @@ What happens?
 
 Its because linux performs word splitting around quotes and any irregular values.
 
-so, make one file that has all your addresses, and a second with your wget command.
 
-Name the wget one something simple, like get_addresses.txt.
+## How do you convert the file you just downloaded into a useable format?
+
+NCBI sra-tools
+
+https://github.com/ncbi/sra-tools
+
+
+There is a command called fasterq-dump which will convert your files. It takes a long time. The command structure is as simple as:
+
+fasterq-dump SRRXXXXX
+
+However, you will want to write a for loop so that it finishes all of your files.
+
+
+## How do you keep your terminal running after class?
+
+Type in the following command:
+
+```
+tmux
+```
+
+And wait until you are given the command prompt. Enter the command you wish to run while class is out, and close the terminal.
+
+There are ways to reattach to this terminal session, however that should not be necessary. 
+
+If you are interested in learning more about tmux the website is here:
+```
+https://github.com/tmux/tmux/wiki
+```
 
