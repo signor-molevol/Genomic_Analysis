@@ -3,7 +3,9 @@
 
 ## Introduction	
 
-### Excellent: Includes 2 – 4 bullet points that are concise and are the most important information needed to convince the reader that this was an important study that needed to be conducted. If bullet points refer to results found in other sources, proper references are included.
+### Excellent: 
+Includes 2 – 4 bullet points that are concise and are the most important information needed to convince the reader that this was an important study that needed to be conducted. 
+If bullet points refer to results found in other sources, proper references are included.
 20 pts	
 
 ### Proficient
@@ -100,9 +102,13 @@ Text, pictures and figures are not crowded.  Adequate amount of “white space�
 Font size of text and type of text on poster is appropriate (no fonts less than 24 point, titles can be distinguished from text, font is used appropriately to draw attention to important points on the poster)
 
 Pictures provide scientific information pertinent to the study and are not used just as decoration. 
-20 points	Poster only achieves 2 of the criteria listed under “excellent”
+20 pts	
 
-15 points	Poster only achieves <2 of the criteria listed under “excellent”
+### Proficient
+Poster only achieves 2 of the criteria listed under “excellent”
+15 pts	
 
+### Partially Proficient
+Poster only achieves <2 of the criteria listed under “excellent”
 0 – 10 points
 	
