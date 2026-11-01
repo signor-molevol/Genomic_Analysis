@@ -23,3 +23,10 @@ https://www.youtube.com/watch?v=qi5pD5Fv1u0
 
 
 
+## Files
+
+Located at:
+
+/storehouse/visitor/nanopore/
+
+Two folders, one for each library. If you would like to use either of them in your analysis you can copy the reads from there. 
