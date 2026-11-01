@@ -3,10 +3,13 @@ https://www.youtube.com/watch?v=qi5pD5Fv1u0
 ## Main problem was low amounts of input - could be for a lot of reasons
 ## TG1
 
+## The dark green is pores that could be sequencing but are not
+
+<img width="4000" height="3000" alt="20261101_153914" src="https://github.com/user-attachments/assets/d15b14e8-a01c-40bd-bf4a-8039f3febdef" />
+
 
 <img width="4000" height="3000" alt="20261101_153836" src="https://github.com/user-attachments/assets/484b33b4-3576-4e02-afee-2baa6aec7b91" />
 
-<img width="4000" height="3000" alt="20261101_153904" src="https://github.com/user-attachments/assets/62d136bc-a381-4dd0-ac72-70a3407b1a78" />
 <img width="4000" height="3000" alt="20261101_153859" src="https://github.com/user-attachments/assets/8fa9fb03-2dc9-42f0-9132-700df7b6ef4b" />
 <img width="4000" height="3000" alt="20261101_153906" src="https://github.com/user-attachments/assets/1e5ebf92-0ddf-42f1-abb0-b95f18356494" />
 
