@@ -25,7 +25,7 @@ and uses to to calculate the total likelihood of a given genotype at a position
 
 The command looks like this:
 
-````
+```
 bcftools mpileup -Ou -f bbc.fasta SRR10729165.sorted.bam SRR10729166.sorted.bam... | bcftools call -mv -Ov -o body_size.vcf
 ```
 
