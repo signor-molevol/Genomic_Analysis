@@ -63,5 +63,14 @@ Rscript pca.R
 ```
 press enter and wait. 
 
+You can either download the output (if your computer supports that) using scp:
+```
+scp -r visitor@134.129.113.23:/storehouse/visitor/table_#/ .
+```
+Or you can ask me to and I'll email it to you. 
 
+This is generally what a PCA looks like:
 
+[G6_PCA.pdf](https://github.com/user-attachments/files/34700795/G6_PCA.pdf)
+
+And what it is telling you is where the variation in the group is coming from - your dots are colored by population, so if they are grouping by color then the populations are more similar to each other than to other populations. Weird outliers and groupings are generally the sign of a problem. 
