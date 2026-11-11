@@ -29,4 +29,39 @@ Then you can enter each line of the FST script verbatim by just copy and pasting
 
 PCA will be done entirely in R, so it requires a little bit of a different approach. This will produce your PCA plot, and we will discuss making FST plots next. 
 
+There is a script on here titled 'PCA.R'. you will need to copy it into a file on the server. You can call it the same thing. Do something like this:
+
+```
+nano PCA.R
+```
+then copy the script and save it.
+
+Copy the name of your VCF file, then open the PCA script.
+
+You will see this at about line 46:
+```
+vcf_file   <- "my_data.vcf.gz"            # your VCF
+pop_files  <- c("pop1.txt", "pop2.txt")   # list as many population files as
+                                          # you have, e.g. add "pop3.txt"
+out_prefix <- "pca"                       # names of output files
+ 
+max_missing <- 0.1    # drop SNPs missing in more than 10% of samples
+min_maf     <- 0.05   # drop SNPs whose rarer allele is below 5% frequency
+thin_bp     <- 100    # keep at most one SNP per 100 bp (0 = no thinning);
+                      # see STEP 6 for why this suits Drosophila
+```
+
+Edit this section so it matches your files. so "my_data.vcf.gz" should become "ethanol.vcf" or whatever. If you have three populations, you can list three pop files. 
+You don't need to edit the bottom portion unless you think you have a reason to (i.e. the max-missing and whatnot).
+
+Close the script and save it.
+
+To run, do this:
+
+```
+Rscript pca.R
+```
+press enter and wait. 
+
+
 
