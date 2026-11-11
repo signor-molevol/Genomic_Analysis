@@ -71,6 +71,7 @@ Or you can ask me to and I'll email it to you.
 
 This is generally what a PCA looks like:
 
-[G6_PCA.pdf](https://github.com/user-attachments/files/34700795/G6_PCA.pdf)
+<img width="734" height="570" alt="Screenshot 2026-11-11 at 12 37 51 PM" src="https://github.com/user-attachments/assets/a849968a-0d32-4263-b86b-0d64086fea87" />
+
 
 And what it is telling you is where the variation in the group is coming from - your dots are colored by population, so if they are grouping by color then the populations are more similar to each other than to other populations. Weird outliers and groupings are generally the sign of a problem. 
