@@ -38,6 +38,7 @@
 #   7. Fill in the few remaining missing genotypes
 #   8. Run the PCA
 #   9. Plot and save the results
+#  10. Plot which SNPs drive each PC along the genome ("Manhattan" style)
 ###############################################################################
 
 library(ggplot2)
@@ -287,5 +288,90 @@ ggsave(paste0(out_prefix, "_plot.png"), p, width = 6, height = 5, dpi = 300)
 write.table(results, paste0(out_prefix, "_results.tsv"),
             sep = "\t", quote = FALSE, row.names = FALSE)
 
-cat("Done. Wrote", paste0(out_prefix, "_plot.pdf/.png"), "and",
-    paste0(out_prefix, "_results.tsv"), "\n")
+
+
+###############################################################################
+# STEP 10: Which SNPs drive the PCA? ("Manhattan plot" of SNP loadings)
+###############################################################################
+# Every PC is built as a weighted sum of all the SNPs. The weight given to
+# each SNP is called its "loading" (stored in pca$rotation: one row per
+# SNP, one column per PC). A SNP with a loading far from zero, positive or
+# negative, has a big influence on where samples fall along that PC; a
+# loading near zero means the SNP hardly matters for it. The sign only
+# says in which direction the SNP pushes samples, so we plot the absolute
+# value (size of the effect).
+#
+# Plotting loadings along the genome, like a Manhattan plot, shows whether
+# a PC is driven by many SNPs spread across the genome (genome-wide
+# population structure) or by a few regions with high peaks (for example
+# a chromosomal inversion or a region under selection that differs
+# between populations). Inversions are common in Drosophila and often
+# show up as a broad block of high loadings on one chromosome arm.
+#
+# This is a descriptive plot, not a statistical test: there are no
+# p-values. We simply mark the top 1% of SNPs for each PC.
+
+pcs_to_plot <- c("PC1", "PC2")   # add "PC3" etc. if you want more
+top_fraction <- 0.01             # highlight the top 1% of SNPs
+
+# Split the SNP names ("2L:12345") back into chromosome and position.
+snp_chrom <- sub(":[^:]*$", "", rownames(pca$rotation))
+snp_pos   <- as.numeric(sub("^.*:", "", rownames(pca$rotation)))
+
+# Build one long table: one row per SNP per PC.
+load_list <- list()
+for (pc in pcs_to_plot) {
+  abs_load <- abs(pca$rotation[, pc])
+  cutoff <- quantile(abs_load, 1 - top_fraction)     # top-1% threshold
+  load_list[[pc]] <- data.frame(
+    chrom   = snp_chrom,
+    pos_mb  = snp_pos / 1e6,                          # position in Mb
+    PC      = paste0(pc, " (", pct[as.numeric(sub("PC", "", pc))], "%)"),
+    loading = pca$rotation[, pc],
+    abs_loading = abs_load,
+    top     = abs_load >= cutoff,
+    cutoff  = cutoff
+  )
+}
+loadings <- do.call(rbind, load_list)
+
+# Keep chromosomes in the order they appear in the VCF (e.g. X 2L 2R 3L 3R)
+loadings$chrom <- factor(loadings$chrom, levels = unique(snp_chrom))
+
+# One panel per chromosome (columns) and per PC (rows). space = "free_x"
+# makes each panel's width proportional to the chromosome's length.
+cutoffs <- unique(loadings[, c("PC", "cutoff")])
+m <- ggplot(loadings, aes(x = pos_mb, y = abs_loading)) +
+  geom_point(aes(colour = top), size = 0.6, alpha = 0.7) +
+  geom_hline(data = cutoffs, aes(yintercept = cutoff),
+             linetype = "dashed", colour = "grey40", linewidth = 0.3) +
+  scale_colour_manual(values = c("FALSE" = "grey50", "TRUE" = "firebrick"),
+                      labels = c("FALSE" = "other SNPs",
+                                 "TRUE" = paste0("top ", 100 * top_fraction, "%")),
+                      name = NULL) +
+  facet_grid(PC ~ chrom, scales = "free", space = "free_x") +
+  labs(x = "Position (Mb)", y = "Absolute SNP loading") +
+  theme_bw() +
+  theme(panel.spacing.x = unit(0.1, "lines"),
+        strip.background = element_rect(fill = "grey90"),
+        legend.position = "bottom")
+
+ggsave(paste0(out_prefix, "_loadings_manhattan.pdf"), m, width = 11, height = 5)
+ggsave(paste0(out_prefix, "_loadings_manhattan.png"), m, width = 11, height = 5,
+       dpi = 300)
+
+# Save the loadings, and a short list of the top SNPs, as tables.
+write.table(loadings[, c("chrom", "pos_mb", "PC", "loading", "abs_loading", "top")],
+            paste0(out_prefix, "_loadings.tsv"),
+            sep = "\t", quote = FALSE, row.names = FALSE)
+top_snps <- loadings[loadings$top, ]
+top_snps <- top_snps[order(top_snps$PC, -top_snps$abs_loading),
+                     c("PC", "chrom", "pos_mb", "loading", "abs_loading")]
+write.table(top_snps, paste0(out_prefix, "_top_snps.tsv"),
+            sep = "\t", quote = FALSE, row.names = FALSE)
+
+cat("Done. Wrote", paste0(out_prefix, "_plot.pdf/.png,"),
+    paste0(out_prefix, "_loadings_manhattan.pdf/.png,"),
+    paste0(out_prefix, "_results.tsv,"),
+    paste0(out_prefix, "_loadings.tsv and"),
+    paste0(out_prefix, "_top_snps.tsv"), "\n")
