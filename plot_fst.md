@@ -20,5 +20,19 @@ flank_bp should be the size of the flanks you want to include, for example 1000 
 Output folder is where you want it to store the output.
 
 Then, if you want to see what the 'outlier' value is, you can do the following:
+```
+Rscript fst_outliers.R fst_windows.windowed.weir.fst 1000 10
+```
 
+This tells you the top 1% of windows for the genome. 
+This extracts the actual windows that are outliers:
 
+```
+grep "TRUE" fst_windows_outliers.tsv > fst_outliers.bed
+```
+
+This tells you if it overlaps any of your candidate genes:
+
+```
+bedtools intersect -wao -a candidate_genes.bed -b fst_outliers.bed
+```
